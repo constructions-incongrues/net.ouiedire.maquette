@@ -4,19 +4,20 @@
   padding-right: 0px;
   position: relative;
   right: -15px;
+  top: -90px;
   @media screen and (max-width: 1040px) {
     position: inherit;
     right: 0px;
+  }
+  @media screen and (max-width: 920px) {
+    top: -12px;
   }
   @media screen and (max-width: 665px) {
     width: 100%;
   }
   .search-container {
     position: absolute;
-    top: -131px;
-    @media screen and (max-width: 1120px) {
-      top: -45px;
-    }
+    top: -48px;
     form {
       white-space: nowrap;
       input {
@@ -42,108 +43,109 @@
       }
     }
   }
-  .visual {
-    height: 366px;
-    width: 366px;
+  figure {
+    display: inline-block;
     position: relative;
-    top: -80px;
+    margin: 0;
     z-index: 2;
-    @media screen and (max-width: 1120px) {
-      top: 0px;
-    }
-    @media screen and (max-width: 390px) {
-      min-width: 100%;
-    }
-    a {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .show-infos {
-      position: absolute;
-      left: 276px;
-      top: 73px;
-      z-index: 4;
-      width: 100%;
-      @media screen and (max-width: 1590px) {
-        left: 0;
-        right: auto;
-        top: 0;
+    .visual {
+      height: 366px;
+      width: 366px;
+      @media screen and (max-width: 415px) {
+        height: 245px;
+        width: 245px;
       }
-      h6 {
-        padding: 4px 8px;
-        margin: 0;
-        display: inline-block;
-        text-transform: uppercase;
-        &.last-categorie {
-          font-size: 14px;
-          position: relative;
-          &:hover {
-            color: @pink;
-          }
-          a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          }
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .show-infos {
+        position: absolute;
+        left: 276px;
+        top: 83px;
+        z-index: 4;
+        width: 100%;
+        @media screen and (max-width: 1590px) {
+          left: 0;
+          right: auto;
+          top: 0;
         }
-        &.single-categorie {
-          font-size: 14px;
-        }
-        &.show-djs {
-          font-size: 38px;
-          position: relative;
-          &:hover {
-            color: @pink;
-          }
-          a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          }
-          &.single-djs {
+        h6 {
+          padding: 4px 8px;
+          margin: 0;
+          display: inline-block;
+          text-transform: uppercase;
+          &.last-categorie {
+            font-size: 14px;
+            position: relative;
             &:hover {
-              color: @blue;
+              color: @pink;
+            }
+            a {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
             }
           }
-        }
-        &.last-title {
-          font-size: 25px;
-          position: relative;
-          white-space: nowrap;
-          &:hover {
-            color: @black;
+          &.single-categorie {
+            font-size: 14px;
           }
-          @media screen and (max-width: 1590px) {
-            white-space: normal;
+          &.show-djs {
+            font-size: 38px;
+            position: relative;
+            &:hover {
+              color: @pink;
+            }
+            a {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+            &.single-djs {
+              &:hover {
+                color: @blue;
+              }
+            }
           }
-          a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+          &.last-title {
+            font-size: 25px;
+            position: relative;
+            white-space: nowrap;
+            &:hover {
+              color: @black;
+            }
+            @media screen and (max-width: 1590px) {
+              white-space: normal;
+            }
+            a {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
           }
-        }
-        &.single-title {
-          font-size: 25px;
-          position: relative;
-          white-space: nowrap;
-          @media screen and (max-width: 1250px) {
-            white-space: normal;
+          &.single-title {
+            font-size: 25px;
+            position: relative;
+            white-space: nowrap;
+            @media screen and (max-width: 1250px) {
+              white-space: normal;
+            }
           }
-        }
-        &.show-date {
-          font-weight: normal;
-          font-size: 15px;
-          margin-right: 100%;
-          white-space: nowrap;
+          &.show-date {
+            font-weight: normal;
+            font-size: 15px;
+            margin-right: 100%;
+            white-space: nowrap;
+          }
         }
       }
     }
@@ -152,16 +154,14 @@
     max-width: 80%;
     vertical-align: top;
     position: relative;
-    top: -60px;
-    @media screen and (max-width: 1120px) {
-      top: 20px;
-    }
+    top: -7px;
     @media screen and (max-width: 991px) {
       display: none;
     }
     .list-description, .description {
       font-size: 14px;
       line-height: 21px;
+      margin-top: 30px;
       margin-bottom: 30px;
     }
     .description {
@@ -283,6 +283,7 @@
     .all-flyers-container {
       padding: 5px 10px 5px 10px;
       position: relative;
+      top: -7px;
       width: 169px;
       z-index: 3;
       font-size: 12px;
@@ -301,7 +302,6 @@
     }
     .share-download-container {
       position: relative;
-      top: -36px;
       left: 0px;
       div {
         display: inline-block;

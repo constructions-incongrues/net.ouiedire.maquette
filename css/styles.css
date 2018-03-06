@@ -178,11 +178,17 @@ header {
   padding-right: 0px;
   position: relative;
   right: -15px;
+  top: -90px;
 }
 @media screen and (max-width: 1040px) {
   .side {
     position: inherit;
     right: 0px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .side {
+    top: -12px;
   }
 }
 @media screen and (max-width: 665px) {
@@ -192,12 +198,7 @@ header {
 }
 .side .search-container {
   position: absolute;
-  top: -131px;
-}
-@media screen and (max-width: 1120px) {
-  .side .search-container {
-    top: -45px;
-  }
+  top: -48px;
 }
 .side .search-container form {
   white-space: nowrap;
@@ -260,115 +261,114 @@ header {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.side .visual {
-  height: 366px;
-  width: 366px;
+.side figure {
+  display: inline-block;
   position: relative;
-  top: -80px;
+  margin: 0;
   z-index: 2;
 }
-@media screen and (max-width: 1120px) {
-  .side .visual {
-    top: 0px;
+.side figure .visual {
+  height: 366px;
+  width: 366px;
+}
+@media screen and (max-width: 415px) {
+  .side figure .visual {
+    height: 245px;
+    width: 245px;
   }
 }
-@media screen and (max-width: 390px) {
-  .side .visual {
-    min-width: 100%;
-  }
-}
-.side .visual a {
+.side figure .visual a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.side .visual .show-infos {
+.side figure .visual .show-infos {
   position: absolute;
   left: 276px;
-  top: 73px;
+  top: 83px;
   z-index: 4;
   width: 100%;
 }
 @media screen and (max-width: 1590px) {
-  .side .visual .show-infos {
+  .side figure .visual .show-infos {
     left: 0;
     right: auto;
     top: 0;
   }
 }
-.side .visual .show-infos h6 {
+.side figure .visual .show-infos h6 {
   padding: 4px 8px;
   margin: 0;
   display: inline-block;
   text-transform: uppercase;
 }
-.side .visual .show-infos h6.last-categorie {
+.side figure .visual .show-infos h6.last-categorie {
   font-size: 14px;
   position: relative;
 }
-.side .visual .show-infos h6.last-categorie:hover {
+.side figure .visual .show-infos h6.last-categorie:hover {
   color: #ef1f73;
 }
-.side .visual .show-infos h6.last-categorie a {
+.side figure .visual .show-infos h6.last-categorie a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.side .visual .show-infos h6.single-categorie {
+.side figure .visual .show-infos h6.single-categorie {
   font-size: 14px;
 }
-.side .visual .show-infos h6.show-djs {
+.side figure .visual .show-infos h6.show-djs {
   font-size: 38px;
   position: relative;
 }
-.side .visual .show-infos h6.show-djs:hover {
+.side figure .visual .show-infos h6.show-djs:hover {
   color: #ef1f73;
 }
-.side .visual .show-infos h6.show-djs a {
+.side figure .visual .show-infos h6.show-djs a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.side .visual .show-infos h6.show-djs.single-djs:hover {
+.side figure .visual .show-infos h6.show-djs.single-djs:hover {
   color: #01c4f5;
 }
-.side .visual .show-infos h6.last-title {
+.side figure .visual .show-infos h6.last-title {
   font-size: 25px;
   position: relative;
   white-space: nowrap;
 }
-.side .visual .show-infos h6.last-title:hover {
+.side figure .visual .show-infos h6.last-title:hover {
   color: #000000;
 }
 @media screen and (max-width: 1590px) {
-  .side .visual .show-infos h6.last-title {
+  .side figure .visual .show-infos h6.last-title {
     white-space: normal;
   }
 }
-.side .visual .show-infos h6.last-title a {
+.side figure .visual .show-infos h6.last-title a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.side .visual .show-infos h6.single-title {
+.side figure .visual .show-infos h6.single-title {
   font-size: 25px;
   position: relative;
   white-space: nowrap;
 }
 @media screen and (max-width: 1250px) {
-  .side .visual .show-infos h6.single-title {
+  .side figure .visual .show-infos h6.single-title {
     white-space: normal;
   }
 }
-.side .visual .show-infos h6.show-date {
+.side figure .visual .show-infos h6.show-date {
   font-weight: normal;
   font-size: 15px;
   margin-right: 100%;
@@ -378,12 +378,7 @@ header {
   max-width: 80%;
   vertical-align: top;
   position: relative;
-  top: -60px;
-}
-@media screen and (max-width: 1120px) {
-  .side .side-container {
-    top: 20px;
-  }
+  top: -7px;
 }
 @media screen and (max-width: 991px) {
   .side .side-container {
@@ -394,6 +389,7 @@ header {
 .side .side-container .description {
   font-size: 14px;
   line-height: 21px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .side .side-container .description {
@@ -519,6 +515,7 @@ header {
 .side .side-container .all-flyers-container {
   padding: 5px 10px 5px 10px;
   position: relative;
+  top: -7px;
   width: 169px;
   z-index: 3;
   font-size: 12px;
@@ -537,7 +534,6 @@ header {
 }
 .side .side-container .share-download-container {
   position: relative;
-  top: -36px;
   left: 0px;
 }
 .side .side-container .share-download-container div {
@@ -571,11 +567,20 @@ header {
   padding-left: 0px;
   padding-right: 0px;
   position: relative;
-  top: -30px;
 }
-@media screen and (max-width: 870px) {
+@media screen and (min-width: 1580px) {
   .main {
-    display: block;
+    top: -30px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1580px) {
+  .main {
+    top: 90px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main {
+    position: initial;
   }
 }
 .main .logo-ouidire {
@@ -616,11 +621,10 @@ header {
   .main .player-container {
     z-index: 3;
     left: 0px;
-    top: 150px;
     height: auto;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 575px) {
   .main .player-container {
     top: 20px;
   }
@@ -714,7 +718,18 @@ header {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 1250px) {
+.main .list-container {
+  margin: 0px;
+  text-align: right;
+  position: relative;
+  left: -15px;
+}
+@media screen and (max-width: 1580px) {
+  .main .list-container {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1023px) {
   .main .list-container {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -729,26 +744,17 @@ header {
     display: block;
   }
 }
-@media screen and (max-width: 1580px) {
-  .main .list-container {
-    position: relative;
-    top: 150px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .main .list-container {
-    top: 20px;
-  }
-}
 .main .list-container .main-list {
-  padding: 15px 0px 15px 49px;
-  min-width: 405px;
-  min-height: 90px;
+  text-align: left;
+  padding: 10px 10px;
+  min-width: 340px;
+  min-height: 55px;
   display: inline-block;
 }
 @media screen and (max-width: 1580px) {
   .main .list-container .main-list {
     margin: auto;
+    z-index: 3;
   }
 }
 .main .list-container .single-list {
@@ -949,39 +955,33 @@ footer .wrap-footer div.footer-right-container p a {
 footer .wrap-footer div.footer-right-container p a:hover {
   color: #ffffff;
 }
-.all-flyers .last-flyer {
-  width: 100%;
+.all-flyers .side .last-flyer {
+  width: 312px;
   height: 450px;
-  position: relative;
-  top: -80px;
-  z-index: 2;
-  background-size: contain;
+  background-size: cover;
 }
-.all-flyers .last-flyer:hover {
+.all-flyers .side .last-flyer:hover {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 @media screen and (max-width: 1120px) {
-  .all-flyers .last-flyer {
+  .all-flyers .side .last-flyer {
     top: 0px;
   }
 }
-.all-flyers .last-flyer a {
+.all-flyers .side .last-flyer a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.all-flyers .expand-container {
-  position: relative;
-  top: -36px;
-  left: 0px;
+.all-flyers .side .expand-container {
+  margin-bottom: 30px;
 }
-.all-flyers .expand-container div {
+.all-flyers .side .expand-container div {
   position: relative;
-  top: -14px;
   display: inline-block;
   padding: 3px 9px 7px 7px;
   margin-bottom: 2px;
@@ -989,13 +989,13 @@ footer .wrap-footer div.footer-right-container p a:hover {
   height: 29px;
   z-index: 3;
 }
-.all-flyers .expand-container div:hover {
+.all-flyers .side .expand-container div:hover {
   background-color: #01c4f5;
 }
-.all-flyers .expand-container div span {
+.all-flyers .side .expand-container div span {
   display: inline-block;
 }
-.all-flyers .expand-container div a {
+.all-flyers .side .expand-container div a {
   font-size: 12px;
   padding: 7px 0 5px 30px;
   position: absolute;
@@ -1005,10 +1005,10 @@ footer .wrap-footer div.footer-right-container p a:hover {
   height: 100%;
   text-transform: uppercase;
 }
-.all-flyers .description {
+.all-flyers .side .description {
   font-size: 14px;
 }
-.all-flyers .flyer-slogan-container {
+.all-flyers .main .flyer-slogan-container {
   height: auto;
   margin-bottom: 40px;
   position: relative;
@@ -1016,18 +1016,18 @@ footer .wrap-footer div.footer-right-container p a:hover {
   z-index: 1;
 }
 @media screen and (max-width: 1580px) {
-  .all-flyers .flyer-slogan-container {
+  .all-flyers .main .flyer-slogan-container {
     z-index: 3;
     left: 0px;
     top: 150px;
   }
 }
 @media screen and (max-width: 991px) {
-  .all-flyers .flyer-slogan-container {
+  .all-flyers .main .flyer-slogan-container {
     top: 20px;
   }
 }
-.all-flyers .flyer-slogan-container .slogan {
+.all-flyers .main .flyer-slogan-container .slogan {
   text-align: center;
   text-transform: uppercase;
   padding-top: 5px;
@@ -1037,32 +1037,34 @@ footer .wrap-footer div.footer-right-container p a:hover {
   height: 24px;
 }
 @media screen and (max-width: 700px) {
-  .all-flyers .flyer-slogan-container .slogan .slogan-pagination-text {
+  .all-flyers .main .flyer-slogan-container .slogan .slogan-pagination-text {
     display: none;
   }
 }
-.all-flyers .flyer-list-container {
+.all-flyers .main .flyer-list-container {
   position: relative;
   z-index: 3;
   margin: auto;
+  text-align: right;
 }
 @media screen and (max-width: 1580px) {
-  .all-flyers .flyer-list-container {
+  .all-flyers .main .flyer-list-container {
     top: 150px;
   }
 }
 @media screen and (max-width: 991px) {
-  .all-flyers .flyer-list-container {
+  .all-flyers .main .flyer-list-container {
     top: 0px;
   }
 }
-.all-flyers .flyer-list-container .flyer-list {
+.all-flyers .main .flyer-list-container .flyer-list {
   padding: 0px;
   min-width: 220px;
   max-width: 237px;
   margin: auto;
+  text-align: left;
 }
-.all-flyers .flyer-list-container .flyer-list .flyer {
+.all-flyers .main .flyer-list-container .flyer-list .flyer {
   position: relative;
   height: 238px;
   background-size: contain;
@@ -1070,31 +1072,31 @@ footer .wrap-footer div.footer-right-container p a:hover {
   margin-bottom: 7px;
   max-width: 177px;
 }
-.all-flyers .flyer-list-container .flyer-list .flyer:hover {
+.all-flyers .main .flyer-list-container .flyer-list .flyer:hover {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
-.all-flyers .flyer-list-container .flyer-list .flyer a {
+.all-flyers .main .flyer-list-container .flyer-list .flyer a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.all-flyers .flyer-list-container .flyer-list .expand-author-container div {
+.all-flyers .main .flyer-list-container .flyer-list .expand-author-container div {
   display: inline-block;
   position: relative;
   top: -18px;
   left: 29px;
 }
-.all-flyers .flyer-list-container .flyer-list .expand-author-container div a {
+.all-flyers .main .flyer-list-container .flyer-list .expand-author-container div a {
   padding: 4px 8px 3px 7px;
 }
-.all-flyers .flyer-list-container .flyer-list .expand-author-container div a:hover {
+.all-flyers .main .flyer-list-container .flyer-list .expand-author-container div a:hover {
   background-color: #01c4f5;
 }
-.all-flyers .flyer-list-container .flyer-list .expand-author-container .flyer-list-author {
+.all-flyers .main .flyer-list-container .flyer-list .expand-author-container .flyer-list-author {
   display: inline-block;
   font-size: 13px;
   float: right;
