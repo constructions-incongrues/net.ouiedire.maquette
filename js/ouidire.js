@@ -7,7 +7,7 @@ $(document).ready(function() {
 	wavesurfer = WaveSurfer.create({
 	    container: '#waveform',
 	    waveColor: '#ffffff',
-	    progressColor: '#808080',
+	    progressColor: '#000000',
 	    barHeight: 1,
 	    barWidth: 1,
 	    height: 100,
@@ -37,7 +37,6 @@ $(document).ready(function() {
 				.find(".white")
 				.toggleClass('fa-pause fa-play');
 		}
-		//wavesurfer.playPause();
 	});
 
 	/************************************************flyer visual expand********************************************************/
