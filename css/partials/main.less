@@ -117,16 +117,46 @@
             right: 0;
             bottom: 0;
             position: absolute;
-            padding: 0 20px 18px 144px;
+            padding: 0 20px 18px 132px;
+            min-width: 100%;
             @media screen and (max-width: 1580px) {
                 padding: 0px;
                 position: inherit;
-                padding: 10% 10% 10% 10%;
+                padding: 2%;
             }
-            .player {
-                margin-bottom: 20px;
+            .transport-play {
+                display: inline-block;
+                background-color: @black;
+                padding: 18px 18px 18px 20px;
+                margin-right: 10px;
+                vertical-align: middle;
+                border: solid 5px @white;
+                .border-radiuses(50px, 50px, 50px, 50px);
+                &:hover {
+                    cursor: pointer;
+                    i {
+                        color: @blue;
+                    }
+                }
+                @media screen and (max-width: 1074px) {
+                    display: block;
+                    width: 85px;
+                    margin: auto;
+                }
+                i {
+                    font-size: 40px;
+                }
+            }
+            #waveform {
+                width: 87%;
+                display: inline-block;
+                vertical-align: middle;
+                @media screen and (max-width: 1074px) {
+                    display: none;
+                }
             }
             .last-artists {
+                margin-top: 10px;
                 .last-artist {
                     display: inline-block;
                     padding: 3px 10px 2px 10px;
