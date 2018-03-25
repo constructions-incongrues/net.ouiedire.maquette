@@ -1,43 +1,47 @@
 $(document).ready(function() {
 
+	if ($("#waveform").length) {
+
 	/*************************************************create player instance****************************************************/
 
-	var wavesurfer;
+		var wavesurfer;
 
-	wavesurfer = WaveSurfer.create({
-	    container: '#waveform',
-	    waveColor: '#ffffff',
-	    progressColor: '#000000',
-	    barHeight: 1,
-	    barWidth: 1,
-	    height: 100,
-	    hideScrollbar: true,
-	    backend: 'MediaElement'
-	});
+		wavesurfer = WaveSurfer.create({
+		    container: '#waveform',
+		    waveColor: '#ffffff',
+		    progressColor: '#000000',
+		    barHeight: 1,
+		    barWidth: 1,
+		    height: 100,
+		    hideScrollbar: true,
+		    backend: 'MediaElement'
+		});
 
 	/*************************************************get audio source*********************************************************/
 
-	var audio_source;
+		var audio_source;
 
-	audio_source = $("#waveform").attr("data-src");
+		audio_source = $("#waveform").attr("data-src");
 
-	wavesurfer.load(audio_source);
+		wavesurfer.load(audio_source);
 
 	/*************************************************start / pause player*****************************************************/
 
-	$(".transport-play").click(function() {
-		if (wavesurfer.isPlaying()) {
-			wavesurfer.pause();
-			$(this)
-				.find(".white")
-				.toggleClass('fa-play fa-pause');
-		} else {
-			wavesurfer.play();
-			$(this)
-				.find(".white")
-				.toggleClass('fa-pause fa-play');
-		}
-	});
+		$(".transport-play").click(function() {
+			if (wavesurfer.isPlaying()) {
+				wavesurfer.pause();
+				$(this)
+					.find(".white")
+					.toggleClass('fa-play fa-pause');
+			} else {
+				wavesurfer.play();
+				$(this)
+					.find(".white")
+					.toggleClass('fa-pause fa-play');
+			}
+		});
+
+	}
 
 	/************************************************flyer visual expand********************************************************/
 

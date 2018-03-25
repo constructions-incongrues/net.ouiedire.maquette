@@ -72,8 +72,29 @@
 		}
     }
 	.error-number {
-		height: 329px;
-		width: 69%;
+		height: 290px;
+		width: 100%;
+		max-width: 707px;
 		background-size: contain;
+		position: relative;
+		left: 132px;
+		@media screen and (max-width: 767px) {
+			height: 215px;
+		}
+		@media screen and (max-width: 990px) {
+			left: 0px;
+		}
+    }
+	.error-drawing {
+		height: 456px;
+		width: 100%;
+		max-width: 544px;
+		background-size: contain;
+		position: relative;
+    	top: -91px;
+    	@media screen and (max-width: 767px) {
+    		top: 0px;
+			height: 215px;
+		}
 	}
 }
