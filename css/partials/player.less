@@ -1,0 +1,161 @@
+.player {
+	width: 100%;
+    position: relative;
+    margin: 0;
+    .wrap-all {
+    	max-width: 1244px;
+    	margin: auto;
+    	top: 0px;
+    	position: static;
+    	.main {
+    		position: static;
+    	}
+    }
+    .logo-ouidire {
+        background-image: url("../media/image/site/logo.png");
+        max-width: 262px;
+        height: 59px;
+        margin: auto;
+        margin-bottom: 8px;
+        z-index: 4;
+    }
+    .slogan {
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 5px;
+        margin-bottom: 13px;
+        position: relative;
+        font-size: 14px;
+        min-height: 24px;
+    }
+	.player-title {
+      .show-infos {
+        width: 100%;
+        @media screen and (max-width: 1590px) {
+          left: 0;
+          right: auto;
+          top: 0;
+        }
+        h6 {
+          padding: 4px 8px;
+          margin: 0;
+          display: inline-block;
+          text-transform: uppercase;
+          &.last-categorie {
+            font-size: 14px;
+            position: relative;
+          }
+          &.single-categorie {
+            font-size: 14px;
+          }
+          &.show-djs {
+            font-size: 38px;
+            position: relative;
+          }
+          &.last-title {
+            font-size: 25px;
+            position: relative;
+            white-space: nowrap;
+            @media screen and (max-width: 1590px) {
+              white-space: normal;
+            }
+          }
+          &.single-title {
+            font-size: 25px;
+            position: relative;
+            white-space: nowrap;
+            @media screen and (max-width: 1250px) {
+              white-space: normal;
+            }
+          }
+          &.show-date {
+            font-weight: normal;
+            font-size: 15px;
+            margin-right: 100%;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .player-container {
+        height: 353px;
+        margin-bottom: 40px;
+        position: relative;
+        left: -15px;
+        z-index: 1;
+        @media screen and (max-width: 1580px) {
+            z-index: 3;
+            left: 0px;
+            height: auto;
+        }
+        @media screen and (max-width: 575px) {
+            top: 20px;
+        }
+        .background-player {
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            padding: 0 20px 18px 132px;
+            min-width: 100%;
+            @media screen and (max-width: 1580px) {
+                padding: 0px;
+                position: inherit;
+                padding: 2%;
+            }
+            .transport-play {
+                display: inline-block;
+                background-color: @black;
+                padding: 18px 18px 18px 20px;
+                margin-right: 10px;
+                vertical-align: middle;
+                border: solid 5px @white;
+                .border-radiuses(50px, 50px, 50px, 50px);
+                &:hover {
+                    cursor: pointer;
+                    i {
+                        color: @blue;
+                    }
+                }
+                @media screen and (max-width: 1074px) {
+                    display: block;
+                    width: 85px;
+                    margin: auto;
+                }
+                i {
+                    font-size: 40px;
+                }
+            }
+            #waveform {
+                width: 87%;
+                display: inline-block;
+                vertical-align: middle;
+                @media screen and (max-width: 1074px) {
+                    display: none;
+                }
+            }
+            .last-artists {
+                margin-top: 10px;
+                .last-artist {
+                    display: inline-block;
+                    padding: 3px 10px 2px 10px;
+                    margin: 4px 2px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    position: relative;
+                    &:hover {
+                        background-color: @pink;
+                    }
+                    a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
