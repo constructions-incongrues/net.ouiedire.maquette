@@ -2,14 +2,15 @@
 	width: 100%;
     position: relative;
     margin: 0;
+    .player-container {
+    	padding-top: 8px;
+    }
     .wrap-all {
     	max-width: 1244px;
+    	width: 94%;
     	margin: auto;
     	top: 0px;
     	position: static;
-    	.main {
-    		position: static;
-    	}
     }
     .logo-ouidire {
         background-image: url("../media/image/site/logo.png");
@@ -30,12 +31,7 @@
     }
 	.player-title {
       .show-infos {
-        width: 100%;
-        @media screen and (max-width: 1590px) {
-          left: 0;
-          right: auto;
-          top: 0;
-        }
+        display: inline-block;
         h6 {
           padding: 4px 8px;
           margin: 0;
@@ -43,14 +39,9 @@
           text-transform: uppercase;
           &.last-categorie {
             font-size: 14px;
-            position: relative;
-          }
-          &.single-categorie {
-            font-size: 14px;
           }
           &.show-djs {
             font-size: 38px;
-            position: relative;
           }
           &.last-title {
             font-size: 25px;
@@ -60,41 +51,16 @@
               white-space: normal;
             }
           }
-          &.single-title {
-            font-size: 25px;
-            position: relative;
-            white-space: nowrap;
-            @media screen and (max-width: 1250px) {
-              white-space: normal;
-            }
-          }
           &.show-date {
             font-weight: normal;
             font-size: 15px;
-            margin-right: 100%;
             white-space: nowrap;
           }
         }
       }
     }
     .player-container {
-        height: 353px;
-        margin-bottom: 40px;
-        position: relative;
-        left: -15px;
-        z-index: 1;
-        @media screen and (max-width: 1580px) {
-            z-index: 3;
-            left: 0px;
-            height: auto;
-        }
-        @media screen and (max-width: 575px) {
-            top: 20px;
-        }
         .background-player {
-            right: 0;
-            bottom: 0;
-            position: absolute;
             padding: 0 20px 18px 132px;
             min-width: 100%;
             @media screen and (max-width: 1580px) {
@@ -105,53 +71,74 @@
             .transport-play {
                 display: inline-block;
                 background-color: @black;
-                padding: 18px 18px 18px 20px;
+                padding: 11px 12px 11px 14px;
                 margin-right: 10px;
                 vertical-align: middle;
                 border: solid 5px @white;
                 .border-radiuses(50px, 50px, 50px, 50px);
                 &:hover {
                     cursor: pointer;
-                    i {
-                        color: @blue;
-                    }
-                }
-                @media screen and (max-width: 1074px) {
-                    display: block;
-                    width: 85px;
-                    margin: auto;
+                    background-color: @pink;
                 }
                 i {
-                    font-size: 40px;
+                    font-size: 25px;
                 }
             }
             #waveform {
                 width: 87%;
                 display: inline-block;
                 vertical-align: middle;
-                @media screen and (max-width: 1074px) {
-                    display: none;
-                }
             }
-            .last-artists {
-                margin-top: 10px;
-                .last-artist {
-                    display: inline-block;
-                    padding: 3px 10px 2px 10px;
-                    margin: 4px 2px;
-                    text-align: center;
-                    text-transform: uppercase;
-                    font-size: 11px;
-                    position: relative;
-                    &:hover {
-                        background-color: @pink;
+        }
+    }
+    .list-container {
+        margin: 0px;
+        padding-bottom: 15px;
+        text-align: left;
+        .single-list {
+        	padding: 5px;
+        	position: relative;
+            &:nth-of-type(odd) {
+                background-color: fade(@grey, 12%);
+            }
+            a {
+                &:hover {
+                    li {
+                        color: @white;
+                        background-color: @blue;
+                        .transition(all, 0.2s, ease);
+                        &.playlist-number {
+                            background-color: @black;
+                            color: @white;
+                        }
+                        &.playlist-title {
+                            background-color: transparent;
+                            color: @blue;
+                        }
                     }
-                    a {
+                }
+                li {
+                    display: inline-block;
+                    padding: 3px 9px;
+                    text-transform: uppercase;
+                    margin: -1px;
+                    &.playlist-number, &.playlist-artist {
+                        font-size: 13px;
+                    }
+                    &.playlist-timing {
+                        font-size: 11px;
+                        padding-top: 5px;
+                        padding-bottom: 4px;
+                        vertical-align: middle;
+                    }
+                    &.playlist-title {
+                        display: block;
+                        padding-left: 0px;
+                        text-transform: lowercase;
+                        font-size: 12px;
                         position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
+                        right: 0px;
+                        top: 6px;
                     }
                 }
             }
