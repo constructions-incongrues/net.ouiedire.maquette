@@ -179,15 +179,17 @@
     }
     .list-container {
         margin: 0px;
-        text-align: right;
+        text-align: center;
         position: relative;
         left: -15px;
+        display: block;
         @media screen and (max-width: 1580px) {
             left: 0px;
         }
-        @media screen and (min-width: 1023px) {
+        @media screen and (min-width: 1125px) {
             .column-count(2);
             .column-gap(3rem);
+            text-align: right;
             display: block;
         }
         .main-list {
