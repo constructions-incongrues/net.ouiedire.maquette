@@ -1,0 +1,29 @@
+.search-results .side figure .visual .show-infos {
+  top: 148px;
+}
+@media screen and (max-width: 415px) {
+  .search-results .side figure .visual .show-infos {
+    top: 0px;
+  }
+}
+.search-results .side figure .visual .show-infos h6 {
+  padding: 4px 15px;
+}
+.search-results .side figure .visual .show-infos h6.background-black {
+  font-size: 35px;
+}
+.search-results .side figure .visual .show-infos h6.background-white {
+  font-size: 54px;
+}
+.search-results .side figure .visual .show-infos h6.background-blue {
+  font-size: 25px;
+}
+.search-results .main {
+  height: 64px;
+}
+.search-results .main-bottom .artist-list-container .list-infos {
+  max-width: 100%;
+}
+.search-results .main-bottom .main-list {
+  margin-bottom: 20px;
+}
