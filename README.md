@@ -1,2 +1,3 @@
-# ouidire_integration
-ouidire integration
+# net.ouiedire.maquette
+
+Intégration de la maquette du site.
